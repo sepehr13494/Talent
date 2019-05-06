@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:background="@drawable/talent_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="70dp"
+        android:id="@+id/tv_ta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/very_margin"
+        android:layout_marginTop="@dimen/very_margin"
+        android:text="T A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="70dp"
+        android:id="@+id/tv_le"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/very_margin"
+        android:layout_marginTop="@dimen/big_margin"
+        android:text="L  E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ta" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="70dp"
+        android:textColor="#fff"
+        android:id="@+id/tv_nt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/very_margin"
+        android:layout_marginTop="@dimen/big_margin"
+        android:text="N T"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_le" />
+
+    <android.support.constraint.ConstraintLayout
+        android:background="@drawable/login_bg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/very_margin"
+        android:layout_marginEnd="@dimen/very_margin"
+        android:layout_marginBottom="@dimen/very_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nt"
+        app:layout_constraintVertical_bias="1.0">
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/very_margin"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:layout_marginEnd="@dimen/very_margin"
+            android:layout_marginBottom="@dimen/little_margin"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/Text_normal"
+            app:layout_constraintBottom_toTopOf="@+id/et_mobile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:textSize="@dimen/Text_normal"
+            android:id="@+id/et_mobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/very_margin"
+            android:layout_marginEnd="@dimen/very_margin"
+            android:layout_marginBottom="@dimen/big_margin"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password"
+            app:layout_constraintBottom_toTopOf="@+id/btn_signup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:textColor="#2B2B2B"
+            android:background="@drawable/btn_login_bg"
+            android:id="@+id/btn_signup"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="@dimen/little_margin"
+            android:layout_marginEnd="@dimen/little_margin"
+            android:layout_marginBottom="@dimen/normal_margin"
+            android:text="Login"
+            app:layout_constraintBottom_toTopOf="@+id/tv_foget"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_foget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/little_margin"
+            android:layout_marginEnd="@dimen/little_margin"
+            android:layout_marginBottom="@dimen/normal_margin"
+            android:text="Forgot Password"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:background="#000"
+            android:id="@+id/textView5"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:textSize="@dimen/Text_normal"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_signup"
+            app:layout_constraintEnd_toStartOf="@+id/tv_signup"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_foget"
+            app:layout_constraintTop_toTopOf="@+id/tv_signup" />
+
+        <TextView
+            android:id="@+id/tv_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/little_margin"
+            android:layout_marginBottom="@dimen/normal_margin"
+            android:text="SIGN UP"
+            android:textColor="#6C75BD"
+            android:textSize="@dimen/Text_normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView5" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
